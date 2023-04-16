@@ -79,7 +79,7 @@ class FlutterScreenRecordingPlugin(
         if (call.method == "startRecordScreen") {
             try {
                 _result = result
-                ForegroundService.startService(registrar.context(), "Your screen is being recorded")
+                ForegroundService.startService(registrar.context(), "")
                 mProjectionManager = registrar.context().applicationContext.getSystemService(Context.MEDIA_PROJECTION_SERVICE) as MediaProjectionManager?
 
                 val metrics = DisplayMetrics()

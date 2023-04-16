@@ -38,7 +38,7 @@ class ForegroundService : Service() {
                 0, notificationIntent, PendingIntent.FLAG_MUTABLE
         )
         val notification = NotificationCompat.Builder(this, CHANNEL_ID)
-                .setContentTitle("DarknessBot Screen Recording")
+                .setContentTitle("DarknessBot")
                 .setContentText(input)
                 .setSmallIcon(R.drawable.icon)
                 .setContentIntent(pendingIntent)
